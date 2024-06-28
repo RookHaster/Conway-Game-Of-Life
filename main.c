@@ -18,6 +18,7 @@ void print_array(char image[ALTO][ANCHO]) {
     COORD coord = {0, 0};
     DWORD bytes_written;
     SetConsoleCursorPosition(hConsole, coord);
+    ShowWindow( GetConsoleWindow() , SW_MAXIMIZE);
     char buffer[ALTO * (ANCHO + 1)];
     int index = 0;
     for (int f = 0; f < ALTO; f++) {
